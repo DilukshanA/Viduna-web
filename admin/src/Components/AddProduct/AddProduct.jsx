@@ -47,7 +47,7 @@ const AddProduct = () => {
         
         formData.append('product',owner_logo);
 
-        await fetch('https://viduna-web-backend.onrender.comupload',{
+        await fetch('https://viduna-web-backend3.onrender.comupload',{
             method:'POST',
             headers:{
                 Accept:'application/json',
@@ -72,7 +72,7 @@ const AddProduct = () => {
         
         formData.append('product',Product_image);
     
-        await fetch('https://viduna-web-backend.onrender.comupload',{
+        await fetch('https://viduna-web-backend3.onrender.comupload',{
             method:'POST',
             headers:{
                 Accept:'application/json',
@@ -98,7 +98,7 @@ const AddProduct = () => {
         formData.append('product',image);
 
 
-        await fetch('https://viduna-web-backend.onrender.comupload',{
+        await fetch('https://viduna-web-backend3.onrender.comupload',{
             method:'POST',
             headers:{
                 Accept:'application/json',
@@ -113,7 +113,7 @@ const AddProduct = () => {
             console.log(product);
 
 
-            await fetch('https://viduna-web-backend.onrender.comaddproduct', {
+            await fetch('https://viduna-web-backend3.onrender.comaddproduct', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
@@ -141,7 +141,7 @@ const AddProduct = () => {
         //formData.append('owner_logo',owner_logo);
         
 
-        await fetch('https://viduna-web-backend.onrender.comupload',{
+        await fetch('https://viduna-web-backend3.onrender.comupload',{
             method:'POST',
             headers:{
                 Accept:'application/json',
@@ -162,7 +162,7 @@ const AddProduct = () => {
             
 
 
-            await fetch('https://viduna-web-backend.onrender.comaddproduct', {
+            await fetch('https://viduna-web-backend3.onrender.comaddproduct', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

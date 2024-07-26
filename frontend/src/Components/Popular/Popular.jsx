@@ -10,7 +10,7 @@ const Popular = () => {
   const [popularProducts, setPopularProducts] = useState([]);
 
   useEffect(()=>{
-    fetch('https://viduna-web-backend.onrender.com/popular')
+    fetch('https://viduna-web-backend3.onrender.com/popular')
     .then((response)=>response.json())
     .then((data)=>setPopularProducts(data));
   },[])

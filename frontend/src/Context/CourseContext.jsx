@@ -17,12 +17,12 @@ const CourseContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
     useEffect(()=>{
-        fetch('https://viduna-web-backend.onrender.com/allproducts')
+        fetch('https://viduna-web-backend3.onrender.com/allproducts')
         .then((response)=>response.json())
         .then((data)=>setAll_courses(data))
 
         if(localStorage.getItem('auth-token')){
-            fetch('https://viduna-web-backend.onrender.com/getcart', {
+            fetch('https://viduna-web-backend3.onrender.com/getcart', {
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -40,7 +40,7 @@ const CourseContextProvider = (props) => {
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
        // console.log(cartItems);
        if(localStorage.getItem('auth-token')){
-        fetch('https://viduna-web-backend.onrender.com/addtocart',{
+        fetch('https://viduna-web-backend3.onrender.com/addtocart',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
@@ -57,7 +57,7 @@ const CourseContextProvider = (props) => {
     const removeFromCart = (itemId) => {
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
         if(localStorage.getItem('auth-token')){
-            fetch('https://viduna-web-backend.onrender.com/removefromcart',{
+            fetch('https://viduna-web-backend3.onrender.com/removefromcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',

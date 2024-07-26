@@ -7,7 +7,7 @@ const ListProduct = () => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = async () =>{
-    await fetch('https://viduna-web-backend.onrender.comallproducts')
+    await fetch('https://viduna-web-backend3.onrender.comallproducts')
     .then((res)=>res.json())
     .then((data)=>{setAllProducts(data)});
   }
@@ -17,7 +17,7 @@ const ListProduct = () => {
   },[])
 
   const remove_product = async (id)=>{
-    await fetch('https://viduna-web-backend.onrender.comremoveproduct',{
+    await fetch('https://viduna-web-backend3.onrender.comremoveproduct',{
       method: 'POST',
       headers:{
         Accept:'application/json',
