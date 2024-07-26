@@ -12,7 +12,12 @@ const { type } = require("os");
 const { error } = require("console");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin:'https://viduna-web-frontend.vercel.app/',
+    methods:['GET','POST','PUT','DELETE'],
+    credentials:true,
+    allowedHeaders:['Content-Type','auth-token']
+}));
 
 
 
